@@ -4,7 +4,7 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 
 
 ## .net core 2.x
- It's a .net core project. 
- Initialization and drawing of the board are provided through CustomExtension while core method as Neighbors are exposed in the Board class.
+ It's a .net core project.   
+ Initialization and drawing of the board are provided through CustomExtension while core method as Neighbors are exposed in the Board class.   
  ![Game of Life](glf.PNG)
  
