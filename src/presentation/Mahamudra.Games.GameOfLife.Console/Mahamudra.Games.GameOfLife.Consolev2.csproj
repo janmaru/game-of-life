@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Mahamudra.Games.GameOfLife.Consolev2</RootNamespace>
+    <AssemblyName>Mahamudra.Games.GameOfLife.Consolev2</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Mahamudra.Games.GameOfLife.Core\Mahamudra.Games.GameOfLife.Core.csproj" />
+  </ItemGroup>
+
+</Project>

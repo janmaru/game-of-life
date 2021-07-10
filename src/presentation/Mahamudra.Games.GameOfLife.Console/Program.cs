@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Mahamudra.Games.GameOfLife.Core;
+using System;
 
-namespace GameOfLife
+namespace Mahamudra.Games.GameOfLife.Consolev2
 {
-    class Program
+    public class Program
     {
         // Constants for the game rules.
         private const int Heigth = 20;
@@ -11,18 +12,16 @@ namespace GameOfLife
 
         static void Main(string[] args)
         {
-            Board board = new Board(Heigth, Width);
+            Board board = new(Heigth, Width);
             board.CreateRandom();
-            board.Draw(true); 
+            board.Draw(true);
 
             for (int i = 0; i < MaxRuns; i++)
             {
                 board.Grow();
                 board.Draw(true);
-                System.Threading.Thread.Sleep(100); 
-            }
-
-            //board.DrawNeighbors(); 
+                System.Threading.Thread.Sleep(100);
+            } 
             Console.ReadKey(true);
         }
     }

@@ -1,12 +1,11 @@
 ﻿using System;
 
-namespace GameOfLife
+namespace Mahamudra.Games.GameOfLife.Core
 {
     public static class CustomExtension
     {
         public static void CreateBeacon(this Board b)
-        {
-            var k = new Random().Next(b.Width - 3);
+        { 
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)

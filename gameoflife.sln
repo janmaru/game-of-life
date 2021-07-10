@@ -2,8 +2,20 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gameoflife", "gameoflife.csproj", "{8CC432E4-45D7-4BD8-B8FE-4B7DC39D7E25}"
+MinimumVisualStudioVersion = 10.0.40219.1 
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F0EE840-176F-4AA2-A332-4E4588A26074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{57197DCA-F52D-493C-8177-4FF81988897D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{2A39D9D1-6999-4F10-ABE7-45181A930C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{B55FBFE2-3594-414D-878C-712DFCDE8A1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentation", "presentation", "{1B969940-1144-4EEC-BD74-8DBFF52B9394}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mahamudra.Games.GameOfLife.Core", "src\core\Mahamudra.Games.GameOfLife.Core\Mahamudra.Games.GameOfLife.Core.csproj", "{26116979-E4C8-41D2-96A0-868BF0DBBB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mahamudra.Games.GameOfLife.Consolev2", "src\presentation\Mahamudra.Games.GameOfLife.Console\Mahamudra.Games.GameOfLife.Consolev2.csproj", "{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,24 @@ Global
 		{8CC432E4-45D7-4BD8-B8FE-4B7DC39D7E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CC432E4-45D7-4BD8-B8FE-4B7DC39D7E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CC432E4-45D7-4BD8-B8FE-4B7DC39D7E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26116979-E4C8-41D2-96A0-868BF0DBBB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26116979-E4C8-41D2-96A0-868BF0DBBB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26116979-E4C8-41D2-96A0-868BF0DBBB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26116979-E4C8-41D2-96A0-868BF0DBBB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A39D9D1-6999-4F10-ABE7-45181A930C72} = {9F0EE840-176F-4AA2-A332-4E4588A26074}
+		{B55FBFE2-3594-414D-878C-712DFCDE8A1F} = {9F0EE840-176F-4AA2-A332-4E4588A26074}
+		{1B969940-1144-4EEC-BD74-8DBFF52B9394} = {9F0EE840-176F-4AA2-A332-4E4588A26074}
+		{26116979-E4C8-41D2-96A0-868BF0DBBB29} = {2A39D9D1-6999-4F10-ABE7-45181A930C72}
+		{67A1680C-3F58-4A8F-A2DE-6ADF3D7735DE} = {1B969940-1144-4EEC-BD74-8DBFF52B9394}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {166BBA71-0942-4566-871D-F1D4895EF441}
